@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Rawan Ayoub</title>
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--أيقونات السوشيال ميديا -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #dcdcdc;       
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: #ffffff; 
+            width: 100%;
+            max-width: 325px; 
+            padding: 35px 24px;
+            border-radius: 12px; 
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .avatar-container {
+            width: 72px; 
+            height: 72px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .profile-name {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .profile-title {
+            color: #676c80; 
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .profile-bio {
+            color: #2c2c2c;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 22px;
+            padding: 0 5px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .social-icon {
+            font-size: 20px;
+            text-decoration: none;
+            color: #5599e6; 
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.15);
+            color: #0077df; 
+        }
+    </style>
+</head>
+<body>
+
+    <!--البطاقة التعريفية -->
+    <div class="profile-card">
+        
+        <div class="avatar-container">
+
+            <svg class="avatar-svg" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+                <circle cx="12" cy="12" r="11" fill="#0077df"/>
+                <circle cx="12" cy="8.5" r="3.5" fill="white"/>
+                <path d="M12 13C8.5 13 5.5 15.5 4.5 19C5.8 20.8 8.2 22 11 22C13.8 22 16.2 20.8 17.5 19C16.5 15.5 13.5 13 12 13Z" fill="white"/>
+            </svg>
+        </div>
+
+        <h1 class="profile-name">Rawan Ayoub</h1>
+        <p class="profile-title">IT Student & Future Developer</p>
+        <p class="profile-bio">A student at Al-Aqsa University studying Information Technology. Passionate about web development, coding, and building smart software solutions
+        </p>
+
+        <!-- الأيقونات-->
+        <div class="social-links">
+            <a href="https://wa.me/qr/KOPLJR2T2UPBB1" class="social-icon WhatsApp" data-platform="WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="https://instagram.com/irawaan03?rpxt=MXU0cXVtMGU4YmRiYQ%3D%3D" class="social-icon Instagram" data-platform="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://rawaaan03" class="social-icon Telegram" data-platform="Telegram" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+        </div>
+
+    </div>
+</body>
+</html>
